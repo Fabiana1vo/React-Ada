@@ -1,0 +1,17 @@
+* {
+    font-family: 'Lucidas Sans', sans-serif;
+    background-color: #181c23;
+    color: #FFFbf0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    margin: 0;
+}
