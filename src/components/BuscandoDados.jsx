@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-
-
 export default function BuscandoDados() {
   const [tarefas, setTarefas] = useState([]);
 
@@ -22,7 +20,11 @@ export default function BuscandoDados() {
       <h1>Buscando dados</h1>
       <ol>
         {tarefas.map((tarefas) => {
-          return <li key={tarefas.id}>{tarefas.title}</li>;
+          return (
+            <div key={tarefas.id}>
+              <li>{tarefas.title}{tarefas.completed ? <p>OK</p> : <p>Tarefa incompleta</p>}</li>
+            </div>
+          );
         })}
       </ol>
     </div>
